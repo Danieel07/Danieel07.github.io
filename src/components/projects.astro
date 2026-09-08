@@ -45,8 +45,8 @@ const projects: Project[] = [
   class="py-12 border-t border-[#ffffff10] text-[var(--white)]"
 >
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">My work</h2>
-    <h3 class="text-4xl md:text-5xl font-medium mb-8">Projects</h3>
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec" data-i18n="projects.badge">Mi trabajo</h2>
+    <h3 class="text-4xl md:text-5xl font-medium mb-8" data-i18n="projects.title">Proyectos</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
@@ -75,6 +75,7 @@ const projects: Project[] = [
                 <div class="flex gap-2 ml-auto">
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={project.link}
                     aria-label="GitHub"
                     class="size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
@@ -90,6 +91,7 @@ const projects: Project[] = [
                   </a>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={project.preview}
                     aria-label="Preview"
                     class="size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
@@ -112,11 +114,12 @@ const projects: Project[] = [
     </div>
     <a
       target="_blank"
-      href="https://github.com"
+      rel="noopener noreferrer"
+      href="https://github.com/Danieel07"
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
-      <span class="md:text-lg text-md">More projects on</span>
+      <span class="md:text-lg text-md" data-i18n="projects.moreOn">Más proyectos en</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

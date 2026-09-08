@@ -1,19 +1,17 @@
 ---
-const technologies = [
-  "astro",
-  "vue",
-  "react",
-  "typeScript",
-  "tailwindcss",
-  "next",
-  "nodejs",
-  "HTML5",
-  "CSS3",
-  "javaScript",
-  "git",
-  "supabase",
-  "mysql",
-  "bash",
+interface TechItem {
+  name: string;
+  file: string;
+}
+
+const technologies: TechItem[] = [
+  { name: "Java", file: "java" },
+  { name: "SpringBoot", file: "springboot" },
+  { name: "MySQL", file: "mysql" },
+  { name: "APIs REST", file: "restapi" },
+  { name: "GIT", file: "git" },
+  { name: "HTML5", file: "HTML5" },
+  { name: "CSS3", file: "CSS3" },
 ];
 ---
 
@@ -23,22 +21,22 @@ const technologies = [
 
   <div class="flex animate-scroll w-max will-change-transform">
     {
-      [...technologies, ...technologies].map((tech, index) => (
+      [...technologies, ...technologies, ...technologies, ...technologies].map((tech, index) => (
         <div 
           class="flex items-center gap-2 pr-12 md:pr-20 group transition-all duration-300"
           aria-hidden={index >= technologies.length ? "true" : "false"}
         >
           <img
-            src={`/svg/${tech}.svg`}
-            alt={tech}
-            class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
+            src={`/svg/${tech.file}.svg`}
+            alt={tech.name}
+            class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60 group-hover:opacity-100"
             width="30"
             height="30"
             loading={index < technologies.length ? "eager" : "lazy"}
             decoding="async"
           />
-          <span class="text-lg font-medium text-[var(--white-icon)] whitespace-nowrap">
-            {tech.charAt(0).toUpperCase() + tech.slice(1)}
+          <span class="text-lg font-medium text-[var(--white-icon)] group-hover:text-white transition-colors whitespace-nowrap">
+            {tech.name}
           </span>
         </div>
       ))
@@ -56,12 +54,12 @@ const technologies = [
     }
   }
   .animate-scroll {
-    animation: scroll 60s linear infinite;
+    animation: scroll 40s linear infinite;
   }
 
   @media (min-width: 768px) {
     .animate-scroll {
-      animation-duration: 50s;
+      animation-duration: 35s;
     }
   }
-</style>
+</style>

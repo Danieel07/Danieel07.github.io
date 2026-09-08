@@ -7,28 +7,27 @@ import SkillsList from "../React/SkillsList.tsx";
 <section class="text-[var(--white)] mt-12 md:mt-0" id="home">
   <div class="max-w-5xl mx-auto space-y-8 md:py-36 pb-14">
     <div class="text-left space-y-4">
-      <p class="text-md md:text-lg text-[var(--white-icon)] shiny-white">
-        Hi, I'm Your Name
+      <p class="text-md md:text-lg text-[var(--white-icon)] shiny-white" data-i18n="hero.greeting">
+        Hola, soy Daniel Nieto
       </p>
       <div
         class="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-8 md:gap-4"
       >
         <h1
           class="text-[var(--white)] text-5xl md:text-6xl font-medium text-pretty leading-none"
+          data-i18n-html="hero.role"
         >
-          Software <br /> Developer
+          Ingeniero en <br /> Sistemas
         </h1>
-        <p class="text-md md:text-2xl text-[var(--white-icon)]">
-          Transforming ideas into interactive and seamless digital experiences
-          with cutting-edge <span class="text-[var(--sec)] shiny-sec"
-            >frontend</span
-          > development.
+        <p class="text-md md:text-2xl text-[var(--white-icon)] leading-relaxed" data-i18n="hero.description">
+          Estudiante apasionado por el desarrollo backend, la arquitectura de software y el diseño de bases de datos. Enfocado en construir soluciones robustas, eficientes y escalables mediante código limpio y buenas prácticas.
         </p>
       </div>
       <div class="flex justify-start gap-2 pt-3 md:pt-6">
         <a
           target="_blank"
-          href="https://github.com"
+          rel="noopener noreferrer"
+          href="https://github.com/Danieel07"
           aria-label="GitHub"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -45,7 +44,8 @@ import SkillsList from "../React/SkillsList.tsx";
         </a>
         <a
           target="_blank"
-          href="https://linkedin.com"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/danielnietollanos/"
           aria-label="LinkedIn"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
@@ -61,9 +61,8 @@ import SkillsList from "../React/SkillsList.tsx";
           </svg>
         </a>
         <a
-          target="_blank"
-          href="mailto:hello@example.com"
-          aria-label="Email"
+          href="mailto:Dnietollanos@gmail.com"
+          aria-label="Gmail"
           class="text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
         >
           <svg
