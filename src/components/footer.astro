@@ -6,8 +6,9 @@ const currentYear = new Date().getFullYear();
 
 <footer class="w-full py-12 border-t border-[#ffffff10]">
   <div class="max-w-5xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10">
-      <div class="flex flex-col lg:items-start items-center space-y-6 gap-9">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Socials & Like Button -->
+      <div class="flex flex-col md:items-start items-center space-y-6">
         <div class="flex space-x-6 sm:space-x-8">
           {
             [
@@ -44,8 +45,9 @@ const currentYear = new Date().getFullYear();
         <LikeButton client:load />
       </div>
 
-      <div class="flex flex-col items-center space-y-6">
-        <div class="grid grid-cols-1 gap-3 w-full max-w-xs py-6">
+      <!-- Built With Tech List -->
+      <div class="flex flex-col md:items-end items-center">
+        <div class="grid grid-cols-1 gap-3 w-full max-w-xs py-2">
           {
             [
               {
@@ -70,7 +72,7 @@ const currentYear = new Date().getFullYear();
                 alt: "Vercel Logo",
               },
             ].map((tech) => (
-              <div class="flex items-center justify-center lg:justify-normal space-x-3">
+              <div class="flex items-center justify-center md:justify-end space-x-3">
                 <span class="text-[var(--white-icon)] text-sm" data-i18n={tech.key}>
                   {tech.desc}
                 </span>
@@ -88,20 +90,9 @@ const currentYear = new Date().getFullYear();
           }
         </div>
       </div>
-
-      <div class="flex flex-col items-center lg:items-start space-y-6">
-        <div class="w-full max-w-xs">
-          <iframe
-            style="border-radius:12px; border:0;"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator&theme=0"
-            class="w-full h-40"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"></iframe>
-        </div>
-      </div>
     </div>
 
+    <!-- Copyright -->
     <div class="mt-12 pt-8 border-t border-[#ffffff10]">
       <p class="text-center text-sm text-[var(--white-icon)] space-y-2">
         <span class="block sm:inline"

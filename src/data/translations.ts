@@ -30,6 +30,12 @@ export interface Translation {
     moreOn: string;
     items: ProjectTranslationItem[];
   };
+  presentation: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    socialsLabel: string;
+  };
   contact: {
     badge: string;
     title: string;
@@ -54,7 +60,7 @@ export const translations: Record<"es" | "en", Translation> = {
     nav: {
       home: "Inicio",
       projects: "Proyectos",
-      contact: "Contacto",
+      contact: "Presentación",
     },
     hero: {
       greeting: "Hola, soy Daniel Nieto",
@@ -120,6 +126,13 @@ export const translations: Record<"es" | "en", Translation> = {
         },
       ],
     },
+    presentation: {
+      badge: "Sobre mí",
+      title: "Video de Presentación",
+      subtitle:
+        "Conoce más sobre mi trayectoria, formación académica, enfoque técnico y pasión por el desarrollo de software.",
+      socialsLabel: "Conectemos directamente:",
+    },
     contact: {
       badge: "Hablemos",
       title: "Contacto",
@@ -143,7 +156,7 @@ export const translations: Record<"es" | "en", Translation> = {
     nav: {
       home: "Home",
       projects: "Projects",
-      contact: "Contact",
+      contact: "Presentation",
     },
     hero: {
       greeting: "Hi, I'm Daniel Nieto",
@@ -208,6 +221,13 @@ export const translations: Record<"es" | "en", Translation> = {
             "Platform and ecosystem for agile urban motorcycle rentals focused on efficient mobility and on-demand services.",
         },
       ],
+    },
+    presentation: {
+      badge: "About me",
+      title: "Presentation Video",
+      subtitle:
+        "Learn more about my background, academic training, technical focus, and passion for software engineering.",
+      socialsLabel: "Let's connect directly:",
     },
     contact: {
       badge: "Let's talk",
