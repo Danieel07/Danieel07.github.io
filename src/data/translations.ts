@@ -1,3 +1,10 @@
+export interface ProjectTranslationItem {
+  id: string;
+  title: string;
+  status: string;
+  description: string;
+}
+
 export interface Translation {
   nav: {
     home: string;
@@ -21,6 +28,7 @@ export interface Translation {
     badge: string;
     title: string;
     moreOn: string;
+    items: ProjectTranslationItem[];
   };
   contact: {
     badge: string;
@@ -81,6 +89,36 @@ export const translations: Record<"es" | "en", Translation> = {
       badge: "Mi trabajo",
       title: "Proyectos",
       moreOn: "Más proyectos en",
+      items: [
+        {
+          id: "midaxus",
+          title: "Midaxus 1.0",
+          status: "Completado",
+          description:
+            "Plataforma web de gestión académica integral con control multi-rol, asignación inteligente de horarios y autenticación segura con JWT.",
+        },
+        {
+          id: "pokedex",
+          title: "Pokédex",
+          status: "Completado",
+          description:
+            "Aplicación desarrollada en Java orientada a la gestión de datos de Pokémon mediante operaciones CRUD completas (crear, leer, actualizar y eliminar).",
+        },
+        {
+          id: "invasion-espacial",
+          title: "Invasión Espacial",
+          status: "Completado",
+          description:
+            "Recreación del clásico videojuego arcade Space Invaders con mecánicas interactivas y renderizado gráfico desarrollado en Python y Pygame.",
+        },
+        {
+          id: "motogo",
+          title: "MotoGO",
+          status: "En desarrollo",
+          description:
+            "Plataforma y ecosistema de alquiler ágil de motocicletas urbanas orientada a movilidad eficiente y servicios bajo demanda.",
+        },
+      ],
     },
     contact: {
       badge: "Hablemos",
@@ -140,6 +178,36 @@ export const translations: Record<"es" | "en", Translation> = {
       badge: "My work",
       title: "Projects",
       moreOn: "More projects on",
+      items: [
+        {
+          id: "midaxus",
+          title: "Midaxus 1.0",
+          status: "Completed",
+          description:
+            "Comprehensive academic management web platform with multi-role control, intelligent schedule allocation, and secure JWT authentication.",
+        },
+        {
+          id: "pokedex",
+          title: "Pokédex",
+          status: "Completed",
+          description:
+            "Java-developed application for Pokémon data management through full CRUD operations (create, read, update, and delete).",
+        },
+        {
+          id: "invasion-espacial",
+          title: "Invasión Espacial",
+          status: "Completed",
+          description:
+            "Recreation of the classic arcade game Space Invaders with interactive mechanics and graphic rendering developed in Python and Pygame.",
+        },
+        {
+          id: "motogo",
+          title: "MotoGO",
+          status: "In Development",
+          description:
+            "Platform and ecosystem for agile urban motorcycle rentals focused on efficient mobility and on-demand services.",
+        },
+      ],
     },
     contact: {
       badge: "Let's talk",
